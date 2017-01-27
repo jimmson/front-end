@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url("https://i.ytimg.com/vi/E6oSVDU_Tvg/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-padding {
+  padding-top: 60px;
+}

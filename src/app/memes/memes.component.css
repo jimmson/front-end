@@ -1,0 +1,18 @@
+.meme-container {
+  background-color: rgba(0, 0, 0, 0.59);
+}
+
+.meme {
+  width : 100%
+}
+
+.thumbnail {
+  color: white;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.52);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  padding-bottom: 20px;
+}
