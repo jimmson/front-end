@@ -1,0 +1,14 @@
+<div class="container meme-container nav-padding">
+  <div class="col-md-2"></div>
+  <div class="col-md-6">
+    <div
+    	*ngIf="meme"
+       class="row"
+    >
+      <div class="thumbnail">
+        <h3>{{meme.caption}}</h3>
+    	   <img class="meme" height="300px" src="http://localhost:3000{{meme.file.relativePath}}" alt="...">
+       </div>
+    </div>
+  </div>
+</div>

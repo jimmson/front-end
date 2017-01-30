@@ -20,4 +20,8 @@ export class MemesComponent implements OnInit {
     })
   }
 
+  getShareURL(id) {
+    //return ["http://localhost:4200/meme", id].join("/");
+    return "https://alltechgyaan.wordpress.com/2016/10/25/angular2-social-sharing/";
+  }
 }

@@ -7,8 +7,18 @@
     >
       <div class="thumbnail">
         <h3>{{meme.caption}}</h3>
-    	   <img class="meme" height="300px" src="http://localhost:3000{{meme.file.relativePath}}" alt="...">
-       </div>
+    	  <img class="meme" height="300px" src="http://localhost:3000{{meme.file.relativePath}}" alt="...">
+        <div class="social-buttons">
+          <div ceiboShare [facebook]="{u: getShareURL(meme._id)}" class="btn btn-facebook clearfix">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            Share
+          </div>
+          <div ceiboShare [twitter]="{url: getShareURL(meme._id)}" class="btn btn-twitter clearfix">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            Share
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

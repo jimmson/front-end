@@ -2,6 +2,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 
+import {AppConfig} from '../app.config';
+
 import { Observable } from 'rxjs/Rx';
 
 import 'rxjs/add/operator/map';
@@ -16,7 +18,7 @@ export class UserService {
   }
 
   register(user) {
-    let url = "http://localhost:3000/users";
+    let url = [AppConfig.API_ENDPOINT, "users"].join("/");
     let body = JSON.stringify(user);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -61,7 +63,7 @@ export class UserService {
 
 
   login(loginDetails) {
-    let url = "http://localhost:3000/users/login";
+    let url = [AppConfig.API_ENDPOINT, "users", "login"].join("/");
     let body = JSON.stringify(loginDetails);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');

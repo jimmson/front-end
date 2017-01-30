@@ -15,6 +15,9 @@ import { MemesComponent } from './memes/memes.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MemeAddComponent } from './meme-add/meme-add.component';
+import { MemeDetailComponent } from './meme-detail/meme-detail.component';
+
+import { CeiboShare } from 'ng2-social-share';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { MemeAddComponent } from './meme-add/meme-add.component';
     MemesComponent,
     LoginComponent,
     RegisterComponent,
-    MemeAddComponent
+    MemeAddComponent,
+    MemeDetailComponent,
+    CeiboShare
   ],
   imports: [
     BrowserModule,
